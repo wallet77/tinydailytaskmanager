@@ -1,0 +1,62 @@
+.clear {clear: both;}
+
+/*
+*-----------------------------------------------
+* Window login
+*-----------------------------------------------
+*/
+.loginForm {
+	background-image: url('../img/login.png');
+	background-repeat: no-repeat !important;
+	background-position: center left
+}
+
+/*
+*-----------------------------------------------
+* Main toolbar
+*-----------------------------------------------
+*/
+.account {
+	background-repeat: no-repeat !important;
+	background-position: center left;
+	height: 40px;
+	width: 45px;
+	padding: 5px;
+	border: none;
+	margin-left: 5px;
+}
+
+.account {
+	background-image: url('../img/photo.jpg') !important;
+}
+
+.mainToolbarBody {
+	background-color: white;
+	border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	padding: 2px;
+}
+
+/*
+*-----------------------------------------------
+* Administration panel
+*-----------------------------------------------
+*/
+
+.project, .member {
+	background-repeat: no-repeat !important;
+	background-position: center left;
+	height: 60px;
+	width: 60px;
+	padding: 5px;
+	border: none;
+/*	margin-left: 5px;*/
+}
+
+.project {
+	background-image: url('../img/project.png') !important;
+}
+
+.member {
+	background-image: url('../img/member.png') !important;
+}
