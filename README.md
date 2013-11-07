@@ -1,41 +1,51 @@
 Tiny Daily Task Manager
 ====================
 
-<h1>TDTM requirements</h1>
+TDTM Roadmap
+--------------------------------------
+
+	1. French translation
+	2. Login system
+	3. Documentation
+	4. Allow clicking on calendar's tasks to edit them
+	5. Filter by task
+
+TDTM requirements
+--------------------------------------
+
 	What TDTM needs to work correctly ?
-	<h3>Client Side</h3>
-	<ul>
-		<li>Extjs 4.2.1</li>
- 		<li>JsDuck 4.6.1</li>
-	</ul>
-	<h3>Browser compatibility</h3>
-	<ul>
-		<li>Internet Explorer 6+</li>
-		<li>Firefox 3.6+ (PC, Mac)</li>
-		<li>Safari 4+</li>
-		<li>Chrome 10+</li>
-		<li>Opera 11+ (PC, Mac)</li>
-	</ul>
-	<h3>Server Side</h3>
-	<ul>
- 		<li>Any server language compatible with REST Api, default is PHP (2.5.3) </li>
- 		<li>Apache 2</li>
- 		<li>Mysql (or any storage system which respects TDTM data model)</li>
-	</ul>
+	###Client Side
+	
+	1. Extjs 4.2.1
+ 	2. JsDuck 4.6.1
 
-	<h1>TDTM contraints</h1>
+	###Browser compatibility
+		1. Internet Explorer 6+
+		2. Firefox 3.6+ (PC, Mac)
+		3. Safari 4+
+		4. Chrome 10+
+		5. Opera 11+ (PC, Mac)
+
+	###Server Side
+ 		1. Any server language compatible with REST Api, default is PHP (5.2.3)
+ 		2. Apache 2
+ 		3. Mysql (or any storage system which respects TDTM data model)
+
+TDTM contraints
+--------------------------------------
 	TDTM works as a standalone and full screen interface.
-	We just need to launch a single Ext.application to manage all interfaces elements.<br/>
+	We just need to launch a single Ext.application to manage all interfaces elements.
 
 
-	<h1>TDTM technicals points</h1>
+TDTM technicals points
+--------------------------------------
 
-	<h1>TDTM features</h1>
- 	<ul>
-		<li>Login system</li>
- 		<li>CRUD Projects</li>
- 		<li>CRUD Members</li>
- 		<li>CRUD Task</li>
-		<li>Display a week calendar</li>
-		<li>Allow task or member filtering on calendar event</li>
-	</ul>
+TDTM features
+--------------------------------------
+
+		1. Login system
+ 		2. CRUD Projects
+ 		3. CRUD Members
+ 		4. CRUD Task
+		5. Display a week calendar
+		6. Allow task or member filtering on calendar event
