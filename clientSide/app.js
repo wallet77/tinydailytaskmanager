@@ -20,7 +20,7 @@
  * <ul>
  * 		<li>Any server language compatible with REST Api, default is PHP (2.5.3) </li>
  * 		<li>Apache 2</li>
- * 		<li>Mysql (or any storage system which respects TDTM data model</li>
+ * 		<li>Mysql (or any storage system which respects TDTM data model)</li>
  * </ul>
  * 
  * <h1>TDTM contraints</h1>
