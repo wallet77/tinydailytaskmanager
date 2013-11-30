@@ -13,7 +13,7 @@ class TaskStorageMock {
 		$task = new TaskBean();
 		$task->setDescription("test");
 		$task->setEndtime("2013-08-12");
-		$task->setGroupid(1001);
+		$task->setParentgroupid(1001);
 		$task->setId($id);
 		$task->setName("Task1");
 		$task->setStarttime("2013-08-11");
@@ -22,7 +22,7 @@ class TaskStorageMock {
 
 	public function createTask($task) {
 		
-
+		return $this->getTask(1);
 	}
 	
 	public function updateTask($task) {

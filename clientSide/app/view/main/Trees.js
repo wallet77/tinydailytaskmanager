@@ -75,7 +75,7 @@ Ext.define('TDTM.view.main.Trees' ,{
 	    overflow: 'auto'
 	},
     items: [{
-    	title: 'Task',
+    	title: LanguageMessages["task"]["title"],
     	style: {
 	    	overflowY: 'visible'
 	    },

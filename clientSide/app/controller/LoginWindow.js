@@ -85,7 +85,7 @@ Ext.define('TDTM.controller.LoginWindow', {
 //
 //	        	Ext.MessageBox.show({
 //	        		title: 'Tentative de connexion',
-//	        		msg: 'La connexion avec le serveur a échoué !<br/>Vérifiez vos identifiants puis réessayer à nouveau.',
+//	        		msg: 'Error',
 //	        		buttons: Ext.MessageBox.OK,
 //	        		icon: Ext.MessageBox.ERROR
 //	        	});

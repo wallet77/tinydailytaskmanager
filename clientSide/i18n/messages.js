@@ -13,6 +13,11 @@ var LanguageMessages = {
 		"allMember": "All"
 	},
 	"administration": "Administration",
+	"language": {
+		"title": "Languages",
+		"fr": "French",
+		"en": "English"
+	},
 	"tooltip": {
 		"buttonProject": "Manage your project",
 		"buttonMember": "Manage members"
@@ -114,19 +119,59 @@ var LanguageMessages = {
 		"deleteTask": {
 			"title": "Deleting task",
 			"msg": "An error occured when deleting task "
-		},
-		"loadGroup": {
-			"title": "Loading Group",
-			"msg": "An error occured when loading group"
-		},
-		"saveGroup": {
-			"title": "Saving group",
-			"msg": "An error occured when saving group"
-		},
-		"deleteGroup": {
-			"title": "Deleting group",
-			"msg": "An error occured when deleting group "
 		}
 	},
-	"loading": "Loading ..."
+	"loading": "Loading ...",
+	"fullCalendar": {
+		"today": "today",
+		"month": "month",
+		"week": "week",
+		"day": "day",
+		"days" : {
+			"monday": "Monday",
+			"tuesday": "Tuesday",
+			"wednesday": "Wednesday",
+			"thursday": "Thursday",
+			"friday": "Friday",
+			"saturday": "Saturnday",
+			"sunday": "Sunday",
+			"short" : {
+				"monday": "Mon",
+				"tuesday": "Tue",
+				"wednesday": "Wed",
+				"thursday": "Thu",
+				"friday": "Fri",
+				"saturday": "Sat",
+				"sunday": "Sun"
+			},
+		},
+		"months" : {
+			"january": "January",
+			"february": "February",
+			"march": "March",
+			"april": "April",
+			"may": "May",
+			"june":	"June",
+			"july":	"July",
+			"august": "August",
+			"september": "September",
+			"october": "October",
+			"november": "November",
+			"december": "December",
+			"short": {
+				"january": "Jan",
+				"february": "Feb",
+				"march": "Mar",
+				"april": "Apr",
+				"may": "May",
+				"june":	"Jun",
+				"july":	"Jul",
+				"august": "Aug",
+				"september": "Sep",
+				"october": "Oct",
+				"november": "Nov",
+				"december": "Dec"
+			}
+		}
+	}
 };

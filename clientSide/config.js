@@ -18,6 +18,7 @@ function getHeaders() {
 
 
 Globals = {
+		"defaultLanguage": "en",
 		"url": {
 			"server": "http://127.0.0.1/tinyDailyTaskManager/dispatch.php"
 		},

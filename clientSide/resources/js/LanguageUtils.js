@@ -15,16 +15,20 @@ var LanguageUtils = {
          */
         loadLanguage: function()
         {
-            LanguageUtils.localize('');
+            // get language in url
+            var lang = UrlUtils.getUrlParam('lang');
+            LanguageUtils.localize(lang);
         },
 
 	    /**
-		 * Switch interface language
+		 * Switch interface language7
+		 * 
+		 * @param {String} lang
 		 * 
 		 */
-	    changeLanguage: function(language)
+	    changeLanguage: function(lang)
 	    {
-	    	window.location.href = '&language=' + language;
+	    	window.location.href = '?lang=' + lang;
 	    },
 
         /**
@@ -34,6 +38,10 @@ var LanguageUtils = {
          */
 	    localize: function (language)
 	    {
+	        if(Globals['defaultLanguage'] === language || !language) {
+	            language = '';
+	        }
+
 	        var languagePath = Globals["path"]["language"];
 	    	// If a string is passed in parameter, let's load the file associated.
 	    	if (typeof(language) === "string" && language)

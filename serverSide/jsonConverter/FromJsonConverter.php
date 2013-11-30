@@ -96,7 +96,11 @@ class FromJsonConverter {
 	 * @param String $json
 	 */
 	public static function convertToTaskBean($json) {
-		$data = json_decode($json);
+	
+		$data = $json;
+		if(is_string($json)) {
+			$data = json_decode($json);
+		}
 
 		$task = new TaskBean();
 		if(property_exists( $data , "id" )) {

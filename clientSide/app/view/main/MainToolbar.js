@@ -7,6 +7,7 @@
  * <ul>
  * <li>project drop down list</li>
  * <li>administration button</li>
+ * <li>internationalization system</li>
  * </ul>
  * </li>
  * </ul>

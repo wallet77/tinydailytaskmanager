@@ -50,6 +50,9 @@ Ext.define('TDTM.controller.MainToolbar', {
             '#buttonAdministration': {
             	click: this.onAdmin
             },
+            '#buttonLanguage > menuitem': {
+            	click: this.onLanguageClick
+            },
             '#projectSelect': {
             	select: this.onSelectProject
             },
@@ -104,6 +107,9 @@ Ext.define('TDTM.controller.MainToolbar', {
                 var data = Ext.decode(response.responseText);
                 var iconPath = Globals["path"]["icon"];
 
+                if(!data["children"]) {
+                	data["children"] = [];
+                }
                 var nbChild = data["children"].length;
                 for(var i = 0 ; i < nbChild; i++) {
                 	var currentItem = data["children"][i];
@@ -160,5 +166,16 @@ Ext.define('TDTM.controller.MainToolbar', {
     	var v = combobox.getValue();
     	var project = combobox.findRecord(combobox.valueField || combobox.displayField, v);
         Utils.loadCalendar(project, member);
+    },
+    
+    /** 
+	 * Function triggered when user select a language.
+	 * 
+	 * @param {Object} c
+	 * 		a menu item representing a language
+	 * 
+	 */
+    onLanguageClick: function(c) {
+    	LanguageUtils.changeLanguage(c.value);
     }
 });

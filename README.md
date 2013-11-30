@@ -4,9 +4,9 @@ Tiny Daily Task Manager
 TDTM Roadmap
 --------------------------------------
 
-1. French translation
+1. French translation & translation menu
 2. Login system
-3. Documentation
+3. Documentation (PHP & Js)
 4. Allow clicking on calendar's tasks to edit them
 5. Filter by task
 
@@ -39,6 +39,18 @@ We just need to launch a single Ext.application to manage all interfaces element
 
 TDTM technicals points
 --------------------------------------
+
+1. RESTFUL
+This project is based on REST principles to allow a better communication between client side and server side.
+It allows anyone to switch easily the entire server side without changing interface.
+
+2. Full Javascipt interface
+Extjs appears to be the better framework to create a thick client like application in a sort period of time.
+It is fully compatible with a REST api.
+
+3. Full ajax application
+This project works as a standalone thick client. Furthermore an ajax application implies to not refresh all the page everytime a request is sent.
+We just need to refresh a part of our application (what Extjs do perfectly).
 
 TDTM features
 --------------------------------------

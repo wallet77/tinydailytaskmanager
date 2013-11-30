@@ -15,6 +15,6 @@ class ProjectStorageMock {
 	}
 	
 	public function createProject($project) {
-		
+		return $this->getProject(1);
 	}
 }

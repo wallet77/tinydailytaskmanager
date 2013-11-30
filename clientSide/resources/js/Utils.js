@@ -56,7 +56,7 @@ var Utils = {
         },
 
 	    /**
-		 * Show interface of proven after login.
+		 * Show interface after login.
 		 * This function show trees, tabs and fill the toolbar.
 		 * 
 		 */
@@ -68,7 +68,22 @@ var Utils = {
             // show tasks tree
             Ext.getCmp('treeTabRegion').setVisible(true);
 
-            // menu déroulant
+            var languagesMenu = {
+                id: 'buttonLanguage',
+                icon: Globals["path"]["icon"] + 'lang/lang.png',
+                text: LanguageMessages["language"]["title"],
+                menu: [{
+                    icon: Globals["path"]["icon"] + 'lang/fr.png',
+                    text: LanguageMessages["language"]["fr"],
+                    value: "fr"
+                },{
+                    icon: Globals["path"]["icon"] + 'lang/en.png',
+                    text: LanguageMessages["language"]["en"],
+                    value: "en"
+                }]
+            };
+
+            // sliding menu
             var menu = Ext.create('Ext.menu.Menu', {
                 id: 'mainMenu',
                 style: {
@@ -78,7 +93,9 @@ var Utils = {
                 	id: 'buttonAdministration',
                 	icon: Globals["path"]["icon"] + 'admin.png',
                 	text: LanguageMessages["administration"],
-            	},{
+            	},
+            	languagesMenu,
+            	{
                 	id: 'buttonLogout',
                 	icon: Globals["path"]["icon"] + 'logout.png',
                 	text: LanguageMessages["login"]["logout"],

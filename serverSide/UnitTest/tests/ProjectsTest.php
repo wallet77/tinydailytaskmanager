@@ -82,5 +82,7 @@ class ProjectsTest extends PHPUnit_Framework_TestCase
 		$resource = $app->getResource($request);
 		/* @var $response Response */
 		$response = $resource->exec();
+		
+		$this->assertEquals(200, $response->code);
     }
 }

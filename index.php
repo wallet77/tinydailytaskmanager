@@ -1,8 +1,3 @@
-<?php
-//require './serverSide/init.php';
-
-
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -18,23 +13,22 @@
 
 	<!-- Extjs libraries -->
 	<script type="text/javascript" src="clientSide/extjs/js/ext-all.js"></script>
-	<script type="text/javascript" src="clientSide/resources/lib/base64.js"></script>
+	<script type="text/javascript" src="clientSide/resources/js/lib/base64.js"></script>
 
 	<!-- TDTM files -->
 	<script type="text/javascript" src="clientSide/config.js"></script>
 	<!--<script type="text/javascript" src="clientSide/app.js"></script>-->
 	<script type="text/javascript" src="clientSide/resources/js/Utils.js"></script>
+	<script type="text/javascript" src="clientSide/resources/js/UrlUtils.js"></script>
 	<script type="text/javascript" src="clientSide/resources/js/LanguageUtils.js"></script>
 
 	<script type="text/javascript">
-	 Ext.onReady(function() {
+	Ext.onReady(function() {
 		 LanguageUtils.loadLanguage();
-	    });
+	});
 	</script>
 </head>
 <body>
-
-
 
 </body>
 </html>
