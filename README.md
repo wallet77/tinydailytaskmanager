@@ -4,7 +4,7 @@ Tiny Daily Task Manager
 TDTM Roadmap
 --------------------------------------
 
-1. French translation & translation menu
+1. French translation & translation menu (<span style="color: green; font-weight: bold">DONE</span>)
 2. Login system
 3. Documentation (PHP & Js)
 4. Allow clicking on calendar's tasks to edit them
