@@ -59,9 +59,8 @@ We just need to refresh a part of our application (what Extjs do perfectly).
 TDTM features
 --------------------------------------
 
-1. Login system
-2. CRUD Projects
-3. CRUD Members
-4. CRUD Task
-5. Display a week calendar
-6. Allow task or member filtering on calendar event
+1. CRUD Projects
+2. CRUD Members
+3. CRUD Task
+4. Display a week calendar
+5. Allow task or member filtering on calendar event
