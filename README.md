@@ -4,7 +4,7 @@ Tiny Daily Task Manager
 TDTM Roadmap
 --------------------------------------
 
-1. French translation & translation menu
+1. French translation & translation menu (<b>DONE</b>)
 2. Login system
 3. Documentation (PHP & Js)
 4. Allow clicking on calendar's tasks to edit them
@@ -18,6 +18,9 @@ What TDTM needs to work correctly ?
 	
 1. Extjs 4.2.1
 2. JsDuck 4.6.1
+3. Jquery 1.10.x
+4. FullCalendar 1.6.x (jquery plugin by Adam Shaw)
+
 
 ###Browser compatibility
 1. Internet Explorer 6+
@@ -30,6 +33,7 @@ What TDTM needs to work correctly ?
 1. Any server language compatible with REST Api, default is PHP (5.2.3)
 2. Apache 2
 3. Mysql (or any storage system which respects TDTM data model)
+4. Be sure your web server accept all HTTP request (GET, POST, PUT, DELETE)
 
 TDTM contraints
 --------------------------------------
