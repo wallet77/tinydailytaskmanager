@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Tiny Daily Task Manager : Tiny Daily Task Manager, a web application built on top of Extjs 4, Jquery and PHP 5. A free tasks management tool which works with man-hours unit instead of classical man-days." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Tiny Daily Task Manager</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/wallet77/tinydailytaskmanager">View on GitHub</a>
+
+          <h1 id="project_title">Tiny Daily Task Manager</h1>
+          <h2 id="project_tagline">Tiny Daily Task Manager, a web application built on top of Extjs 4, Jquery and PHP 5. A free tasks management tool which works with man-hours unit instead of classical man-days.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/wallet77/tinydailytaskmanager/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/wallet77/tinydailytaskmanager/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="tiny-daily-task-manager" class="anchor" href="#tiny-daily-task-manager"><span class="octicon octicon-link"></span></a>Tiny Daily Task Manager</h1>
+
+<h2>
+<a name="tdtm-roadmap" class="anchor" href="#tdtm-roadmap"><span class="octicon octicon-link"></span></a>TDTM Roadmap</h2>
+
+<ol>
+<li>French translation &amp; translation menu (<b>DONE</b>)</li>
+<li>Login system</li>
+<li>Documentation (PHP &amp; Js)</li>
+<li>Allow clicking on calendar's tasks to edit them</li>
+<li>Filter by task</li>
+</ol><h2>
+<a name="tdtm-requirements" class="anchor" href="#tdtm-requirements"><span class="octicon octicon-link"></span></a>TDTM requirements</h2>
+
+<p>What TDTM needs to work correctly ?</p>
+
+<h3>
+<a name="client-side" class="anchor" href="#client-side"><span class="octicon octicon-link"></span></a>Client Side</h3>
+
+<ol>
+<li>Extjs 4.2.1</li>
+<li>JsDuck 4.6.1</li>
+<li>Jquery 1.10.x</li>
+<li>FullCalendar 1.6.x (jquery plugin by Adam Shaw)</li>
+</ol><h3>
+<a name="browser-compatibility" class="anchor" href="#browser-compatibility"><span class="octicon octicon-link"></span></a>Browser compatibility</h3>
+
+<ol>
+<li>Internet Explorer 6+</li>
+<li>Firefox 3.6+ (PC, Mac)</li>
+<li>Safari 4+</li>
+<li>Chrome 10+</li>
+<li>Opera 11+ (PC, Mac)</li>
+</ol><h3>
+<a name="server-side" class="anchor" href="#server-side"><span class="octicon octicon-link"></span></a>Server Side</h3>
+
+<ol>
+<li>Any server language compatible with REST Api, default is PHP (5.2.3)</li>
+<li>Apache 2</li>
+<li>Mysql (or any storage system which respects TDTM data model)</li>
+<li>Be sure your web server accept all HTTP request (GET, POST, PUT, DELETE)</li>
+</ol><h2>
+<a name="tdtm-contraints" class="anchor" href="#tdtm-contraints"><span class="octicon octicon-link"></span></a>TDTM contraints</h2>
+
+<p>TDTM works as a standalone and full screen interface.
+We just need to launch a single Ext.application to manage all interfaces elements.</p>
+
+<h2>
+<a name="tdtm-technicals-points" class="anchor" href="#tdtm-technicals-points"><span class="octicon octicon-link"></span></a>TDTM technicals points</h2>
+
+<ol>
+<li><p>RESTFUL
+This project is based on REST principles to allow a better communication between client side and server side.
+It allows anyone to switch easily the entire server side without changing interface.</p></li>
+<li><p>Full Javascipt interface
+Extjs appears to be the better framework to create a thick client like application in a sort period of time.
+It is fully compatible with a REST api.</p></li>
+<li><p>Full ajax application
+This project works as a standalone thick client. Furthermore an ajax application implies to not refresh all the page everytime a request is sent.
+We just need to refresh a part of our application (what Extjs do perfectly).</p></li>
+</ol><h2>
+<a name="tdtm-features" class="anchor" href="#tdtm-features"><span class="octicon octicon-link"></span></a>TDTM features</h2>
+
+<ol>
+<li>CRUD Projects</li>
+<li>CRUD Members</li>
+<li>CRUD Task</li>
+<li>Display a week calendar</li>
+<li>Allow task or member filtering on calendar event</li>
+</ol>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Tiny Daily Task Manager maintained by <a href="https://github.com/wallet77">wallet77</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
