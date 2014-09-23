@@ -86,11 +86,12 @@ Ext.application({
 	    });
 
 	    // Create a login window and display it only if user is not logged
-//		if(!Ext.util.Cookies.get("TDTM_username")) {
-//			var win = Ext.create('TDTM.view.main.LoginWindow');
-//			win.show();
-//		} else {
+	    // and if server required an authentification
+		if(Globals["enableAuth"] && !Ext.util.Cookies.get("TDTM_username")) {
+			var win = Ext.create('TDTM.view.main.LoginWindow');
+			win.show();
+		} else {
 			Utils.loadInterface();
-//		}
+		}
     }
 });

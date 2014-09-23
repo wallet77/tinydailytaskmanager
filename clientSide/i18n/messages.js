@@ -4,7 +4,11 @@ var LanguageMessages = {
 		"login": "Login",
 		"password": "Password",
 		"button": "Go",
-		"logout": "Logout"
+		"logout": "Logout",
+		"error" : {
+			"title": "Connection",
+			"msg": "Error during connection process. Check your connection information."
+		}
 	},
 	"hello": "Hello",
 	"field": {

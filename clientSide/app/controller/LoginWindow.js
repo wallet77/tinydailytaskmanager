@@ -68,28 +68,24 @@ Ext.define('TDTM.controller.LoginWindow', {
     	// don't need to repeat it for each request
     	Ext.Ajax.defaultHeaders = getHeaders();
 
-    	window.close();
-    	Utils.loadInterface();
+    	Ext.Ajax.request({
+    		url:  Globals["url"]["server"] + '/connection',
+    		method: 'GET',
 
-//    	Ext.Ajax.request({
-//    		url: serverRestUrl + '/test-connection',
-//    		method: 'GET',
-//
-//	    	success: function(response, opts) {
-//	    		window.close();
-//
-//	    		Utils.loadInterface();
-//
-//	        },
-//	        failure: function(response, opts) {
-//
-//	        	Ext.MessageBox.show({
-//	        		title: 'Tentative de connexion',
-//	        		msg: 'Error',
-//	        		buttons: Ext.MessageBox.OK,
-//	        		icon: Ext.MessageBox.ERROR
-//	        	});
-//	        }
-//    	});
+	    	success: function(response, opts) {
+	    		window.close();
+
+	    		Utils.loadInterface();
+
+	        },
+	        failure: function(response, opts) {
+	        	Ext.MessageBox.show({
+	        		title: LanguageMessages['login']['error']['title'],
+	        		msg: LanguageMessages['login']['error']['msg'],
+	        		buttons: Ext.MessageBox.OK,
+	        		icon: Ext.MessageBox.ERROR
+	        	});
+	        }
+    	});
     },
 });

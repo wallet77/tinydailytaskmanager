@@ -5,7 +5,7 @@
  *
  * @author Vincent Vallet
  * @since 1.0
- *
+ * @package serverSide.services
  */
 class TaskService {
 

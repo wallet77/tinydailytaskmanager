@@ -4,7 +4,11 @@ var LanguageMessages = {
 		"login": "Identifiant",
 		"password": "Mot de passe",
 		"button": "Go",
-		"logout": "D&eacute;connexion"
+		"logout": "D&eacute;connexion",
+		"error" : {
+			"title": "Connexion",
+			"msg": "Erreur de connexion. V&eacute;rifier les informations de connexion."
+		}
 	},
 	"hello": "Bonjour",
 	"field": {
