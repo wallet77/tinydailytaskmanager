@@ -18,6 +18,8 @@ require './serverSide/services/GroupService.php';
 require './serverSide/storage/GroupStorage.php';
 require './serverSide/services/TaskService.php';
 require './serverSide/storage/TaskStorage.php';
+require './serverSide/services/ConnectionService.php';
+require './serverSide/storage/ConnectionStorage.php';
 require './serverSide/bean/MemberBean.php';
 require './serverSide/bean/ProjectBean.php';
 require './serverSide/bean/GroupBean.php';
@@ -64,6 +66,15 @@ $taskService = new TaskService();
 $taskStorage = new TaskStorage();
 $taskService->setTaskStorage($taskStorage);
 $container["serviceTask"] = $taskService;
+
+/*--------------------------------------------------*/
+/*  	     Set connection service/storage			*/
+/*--------------------------------------------------*/
+/* @var $service ConnectionService */
+$connectionService = new ConnectionService();
+$connectionStorage = new ConnectionStorage();
+$connectionService->setConnectionStorage($connectionStorage);
+$container["serviceConnection"] = $connectionService;
 
 
 $container["db"] = dbconnect();
